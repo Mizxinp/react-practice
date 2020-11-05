@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+// import LikeButton from './components/LikeButton'
+import useMousePosition from './hooks/useMousePosition'
+import ReduxPage from './redux/ReduxPage'
 import './App.css';
 
 function App() {
+  const position = useMousePosition()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div>{position.x}</div> */}
+      {/* <LikeButton /> */}
+      <ReduxPage />
     </div>
   );
 }
