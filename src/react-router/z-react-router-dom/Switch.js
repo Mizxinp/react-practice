@@ -4,7 +4,7 @@ import matchPath from "./matchPath"
 
 /**
  * 独占路由
- * 渲染与该地址匹配等第一个字节 <Route> 或者 <Redirect>
+ * 渲染与该地址匹配等第一个字组件 <Route> 或者 <Redirect>
  * 遍历所有子节点，找到匹配的就不往下找了
  */
 export default class Switch extends Component {
