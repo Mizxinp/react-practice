@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {RouterContext} from './RouterContext'
+import LifeCycle from './LifeCycle'
 
 const Redirect = ({  to, push = false }) => {
     return(
@@ -20,14 +21,3 @@ const Redirect = ({  to, push = false }) => {
 }
 
 export default Redirect
-
-class LifeCycle extends Component {
-    componentDidMount() {
-        if (this.props.onMount) {
-            this.props.onMount.call(this, this);
-        }
-    }
-    render() {
-        return null;
-    }
-}

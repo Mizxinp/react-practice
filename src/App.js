@@ -1,7 +1,7 @@
 import React from 'react';
 // import LikeButton from './components/LikeButton'
 import useMousePosition from './hooks/useMousePosition'
-import ReduxPage from './redux/ReduxPage'
+import ReduxTestPage from './redux/ReduxTestPage'
 import RouterTestPage from './react-router'
 import './App.css';
 
@@ -12,6 +12,7 @@ function App() {
       {/* <div>{position.x}</div> */}
       {/* <LikeButton /> */}
       <RouterTestPage />
+      {/* <ReduxTestPage /> */}
     </div>
   );
 }
