@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+// import React, {Component} from "react";
 // import ReactDOM from "react-dom";
-import ReactDOM from "./react/react-dom-v1";
-// import Component from "./kreact/Component";
+import ReactDOM, { useState } from "./react/react-dom-v3";
+import Component from "./react/Component";
 
 import "./index.css";
 
@@ -16,12 +16,16 @@ class ClassComponent extends Component {
 }
 
 function FunctionComponent(props) {
-  return (
-    <div className="border">
-      <p>{props.name}</p>
-    </div>
-  );
-}
+    const [count, setCount] = useState(0);
+    return (
+      <div className="border">
+        <button onClick={() => setCount(count + 1)}>
+          {count + ""}
+        </button>
+        {count % 2 ? <p>{props.name}</p> : <span>span</span>}
+      </div>
+    );
+  }
 
 const jsx = (
   <div className="border">
