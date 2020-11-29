@@ -14,7 +14,7 @@ function countReducer(state = 0, action) {
       return state + 1;
       case "MINUS":
           console.log('actio', state, action)
-        return state - action.payload || 1;
+        return state - (action.payload || 1);
       default:
         return state;
     }
