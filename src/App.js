@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       {/* <div>{position.x}</div> */}
       {/* <LikeButton /> */}
-      <RouterTestPage />
-      {/* <ReduxTestPage /> */}
+      {/* <RouterTestPage /> */}
+      <ReduxTestPage />
     </div>
   );
 }
