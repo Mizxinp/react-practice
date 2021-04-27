@@ -28,7 +28,8 @@ function createStore(reducer, enhancer) {
 
         // 返回取消订阅函数
         return () => {
-            currentListeners = []
+            const index = currentListeners.indexOf(listener)
+            currentListeners.splice(index, 1)
         }
     }
 

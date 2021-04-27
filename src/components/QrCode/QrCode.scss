@@ -1,0 +1,25 @@
+.container {
+    width: auto;
+}
+
+.hideImg {
+    img {
+        display: none;
+    }
+}
+
+.modal {
+    :global {
+        .ant-modal-body {
+            padding: 32px 0;
+        }
+
+        .ant-modal-confirm-content {
+            text-align: center;
+        }
+
+        .ant-modal-confirm-btns {
+            display: none;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import useMousePosition from './hooks/useMousePosition'
 import ReduxTestPage from './redux/ReduxTestPage'
 import ReactReduxTestPage from './redux/ReactReduxTestPage'
 import RouterTestPage from './react-router'
+import QrcodeTestPage from './pages/QrCodeTestPage'
 import './App.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       {/* <LikeButton /> */}
       {/* <RouterTestPage /> */}
       {/* <ReduxTestPage /> */}
-      <ReactReduxTestPage />
+      <QrcodeTestPage />
+      {/* <ReactReduxTestPage /> */}
     </div>
   );
 }
